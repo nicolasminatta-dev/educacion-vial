@@ -3,55 +3,165 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laboratorio Web — Nico</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Seguridad Vial | Fundación MAPFRE</title>
+  <meta name="description" content="Programas de Seguridad Vial para instituciones educativas y familias. Educación, prevención y comunidad para una movilidad más segura." />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <main class="wrap">
-<header class="site-header">
-  <div class="brand">
-    <h1 class="title">Laboratorio Web</h1>
-  </div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <nav class="site-nav">
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="proyectos.html">Proyectos</a>
-  </nav>
+  <header class="site-header" role="banner">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Fundación MAPFRE - Seguridad Vial">
+        <img class="brand-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
+      </a>
 
-  <div class="topbar">
-    <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
-      Tema claro
-    </button>
-  </div>
-    </header>
-    <section class="grid">
-      <div class="card">
-        <h2>Juegos Interactivos Educativos</h2>
-      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav-link" href="instituciones.html">Instituciones educativas</a>
+        <a class="nav-link" href="programa.html">Programa en acción</a>
+        <a class="nav-link" href="material.html">Material de descarga</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="card">
-        <h2>Aplicaciones</h2>
-      </div>
+  <main id="contenido">
+    <section class="hero" aria-label="Presentación principal">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Seguridad Vial</p>
+          <h1 class="hero-title">Educamos para salvar vidas</h1>
 
-      <div class="card">
-        <h2>En acción</h2>
-        <small>
-          Repo:
-          <a href="https://github.com/nicolasminatta-dev/nicolasminatta-dev.github.io" target="_blank">
-            GitHub
-          </a>
-        </small>
+          <p class="hero-subtitle">
+            Programas de Seguridad Vial para instituciones educativas y familias.
+            Educación, prevención y comunidad para una movilidad más segura.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="programa.html">Ver el programa</a>
+            <a class="btn btn-secondary" href="material.html">Descargar material</a>
+          </div>
+
+          <ul class="hero-highlights" aria-label="Puntos clave">
+            <li>Recursos claros y prácticos</li>
+            <li>Actividades para el aula y el hogar</li>
+            <li>Enfoque preventivo y familiar</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-label="Imagen ilustrativa">
+          <div class="media-placeholder" role="img" aria-label="Imagen: familia y educación vial"></div>
+        </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <small>© <span id="y"></span> Nicolás Minatta</small>
-    </footer>
+    <section class="pillars" aria-label="Pilares del programa">
+      <div class="wrap">
+        <h2 class="section-title">Un enfoque simple y efectivo</h2>
+        <p class="section-subtitle">
+          Trabajamos para construir hábitos seguros desde edades tempranas, con recursos accesibles para toda la comunidad.
+        </p>
 
+        <div class="grid-3">
+          <article class="card">
+            <h3 class="card-title">Educación</h3>
+            <p class="card-text">
+              Contenidos y actividades diseñados para distintas edades, con foco en el aprendizaje práctico.
+            </p>
+            <a class="card-link" href="instituciones.html">Ver instituciones educativas</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Prevención</h3>
+            <p class="card-text">
+              Promovemos conductas responsables y decisiones seguras en el tránsito, para reducir riesgos.
+            </p>
+            <a class="card-link" href="programa.html">Conocer el programa</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Comunidad</h3>
+            <p class="card-text">
+              Acompañamos a familias y organizaciones con materiales claros, listos para usar.
+            </p>
+            <a class="card-link" href="material.html">Ir a material de descarga</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" aria-label="Cómo funciona el programa">
+      <div class="wrap">
+        <h2 class="section-title">¿Cómo funciona el programa?</h2>
+        <p class="section-subtitle">
+          Un recorrido simple para implementar educación vial con impacto real.
+        </p>
+
+        <ol class="steps" aria-label="Pasos del programa">
+          <li class="step">
+            <h3 class="step-title">Capacitación</h3>
+            <p class="step-text">
+              Guías y recursos para docentes, familias y referentes, con un enfoque claro y aplicable.
+            </p>
+          </li>
+
+          <li class="step">
+            <h3 class="step-title">Implementación</h3>
+            <p class="step-text">
+              Actividades listas para aplicar en contextos educativos y comunitarios, adaptables a cada institución.
+            </p>
+          </li>
+
+          <li class="step">
+            <h3 class="step-title">Material didáctico</h3>
+            <p class="step-text">
+              Descargables y contenidos de apoyo para reforzar hábitos seguros dentro y fuera del aula.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta" aria-label="Llamado a la acción">
+      <div class="wrap cta-inner">
+        <div class="cta-copy">
+          <h2 class="cta-title">Sumá tu institución al programa</h2>
+          <p class="cta-text">
+            Te acompañamos con recursos, orientación y materiales para implementar educación vial con claridad.
+          </p>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn btn-invert" href="contacto.html">Contactanos</a>
+          <a class="btn btn-ghost" href="material.html">Ver materiales</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="js/script.js"></script>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
+        <p class="footer-desc">Seguridad Vial</p>
+      </div>
+
+      <div class="footer-links" aria-label="Enlaces del sitio">
+        <a href="instituciones.html">Instituciones educativas</a>
+        <a href="programa.html">Programa en acción</a>
+        <a href="material.html">Material de descarga</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-copy">
+          © <span id="year"></span> Fundación MAPFRE. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
