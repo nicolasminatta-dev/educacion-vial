@@ -68,9 +68,7 @@ a:hover{ text-decoration: underline; }
   padding: 14px 0;
 }
 .brand-logo{
-  height: 44px;
-  width: auto;
-  display: block;
+  display: none !important;
 }
 .nav{
   display: flex;
@@ -313,9 +311,7 @@ a:hover{ text-decoration: underline; }
   align-items: start;
 }
 .footer-logo{
-  height: 34px;
-  width: auto;
-  display: block;
+  display: none !important;
 }
 .footer-desc{ margin: 8px 0 0; color: var(--muted); }
 .footer-links{
