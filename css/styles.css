@@ -134,7 +134,7 @@ a:hover{ text-decoration: underline; }
 .hero-actions{
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 14px;
 }
 
@@ -149,7 +149,10 @@ a:hover{ text-decoration: underline; }
   text-decoration: none;
   cursor: pointer;
   transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  text-align: center;
+  white-space: nowrap;
 }
+
 .btn:hover{
   transform: translateY(-1px);
   text-decoration: none;
@@ -363,4 +366,76 @@ a:hover{ text-decoration: underline; }
 .form-contacto textarea:focus{
   outline: none;
   border-color: var(--brand);
+}
+/* =========================
+   Escuelas visitadas (tabla)
+   ========================= */
+
+.visits{
+  margin-top: 8px;
+}
+
+.visits-tools{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0 12px;
+}
+
+.visits-search{
+  width: min(520px, 100%);
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-family: inherit;
+}
+
+.visits-search:focus{
+  outline: none;
+  border-color: var(--brand);
+}
+
+.visits-table-wrap{
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.visits-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.visits-table th,
+.visits-table td{
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.visits-table thead th{
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: var(--soft);
+}
+
+.visits-table tbody tr:hover{
+  background: #fafafa;
+}
+
+.visits-table tbody tr:last-child td{
+  border-bottom: 0;
+}
+
+.badge{
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 0.9rem;
 }

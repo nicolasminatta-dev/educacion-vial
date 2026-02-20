@@ -1,0 +1,20 @@
+[
+  {
+    "fecha": "2026-02-20",
+    "escuela": "Escuela N° 123",
+    "ciudad": "Mar del Plata",
+    "anio": 2026
+  },
+  {
+    "fecha": "2025-11-08",
+    "escuela": "Escuela Primaria N° 12",
+    "ciudad": "La Plata",
+    "anio": 2025
+  },
+  {
+    "fecha": "2024-06-12",
+    "escuela": "Colegio San Martín",
+    "ciudad": "CABA",
+    "anio": 2024
+  }
+]

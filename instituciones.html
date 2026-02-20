@@ -42,6 +42,41 @@
             <p class="card-text">Nivel inicial, primario y secundario. Adaptable por edad y contexto.</p>
           </article>
 
+          <section class="visits" aria-label="Escuelas visitadas">
+  <h2 class="section-title mt-20">Escuelas visitadas</h2>
+  <p class="section-subtitle">
+    Registro de visitas y actividades realizadas. Podés buscar por escuela, ciudad o año.
+  </p>
+
+  <div class="visits-tools">
+    <input
+      class="visits-search"
+      type="search"
+      id="visitsSearch"
+      placeholder="Buscar (ej: San Martín, La Plata, 2024)…"
+      aria-label="Buscar escuelas visitadas"
+    />
+  </div>
+
+  <div class="visits-table-wrap" role="region" aria-label="Tabla de escuelas visitadas" tabindex="0">
+    <table class="visits-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Nombre de escuela</th>
+          <th>Ciudad</th>
+          <th>Año</th>
+        </tr>
+      </thead>
+      <tbody id="visitsTbody">
+        <tr>
+          <td colspan="4">Cargando listado…</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
           <article class="card">
             <h3 class="card-title">¿Qué incluye?</h3>
             <p class="card-text">Guías, actividades y material didáctico listo para aplicar.</p>
