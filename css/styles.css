@@ -328,11 +328,40 @@ a:hover{ text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 900px){
-  .hero-inner{ grid-template-columns: 1fr; }
-  .media-placeholder{ max-width: 520px; }
-  .grid-3{ grid-template-columns: 1fr; }
-  .steps{ grid-template-columns: 1fr; }
-  .footer-inner{ grid-template-columns: 1fr; }
+
+  .hero-inner{
+    grid-template-columns: 1fr;
+  }
+
+  .media-placeholder{
+    max-width: 520px;
+  }
+
+  .grid-3{
+    grid-template-columns: 1fr;
+  }
+
+  .steps{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner{
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajustes mobile hero */
+  .hero-actions{
+    flex-wrap: wrap;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
+  .nav{
+    gap: 8px;
+  }
+
 }
 /* =========================
    Utilidades de espaciado
