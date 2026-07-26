@@ -13,9 +13,11 @@
 
   <header class="site-header" role="banner">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="Fundación MAPFRE - Seguridad Vial">
-        <img class="brand-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
-      </a>
+      <!--
+<a class="brand" href="index.html" aria-label="Fundación MAPFRE - Seguridad Vial">
+  <img class="brand-logo" src="img/logo-fundacion-mapfre.jpg" alt="Fundación MAPFRE" />
+</a>
+-->
 
       <nav class="nav" aria-label="Navegación principal">
         <a class="nav-link" href="instituciones.html">Instituciones educativas</a>
@@ -33,30 +35,36 @@
           <p class="kicker">Seguridad Vial</p>
           <h1 class="hero-title">Educamos para salvar vidas</h1>
 
-          <div class="hero-actions">
-  <a class="btn btn-primary" href="instituciones.html">Instituciones Educativas</a>
-  <a class="btn btn-secondary" href="programa.html">Programa en Acción</a>
-  <a class="btn btn-secondary" href="material.html">Material de descarga</a>
+          <div class="hero-actions" aria-label="Acciones principales">
+  <a class="btn btn-primary" href="material.html">Material de descarga</a>
   <a class="btn btn-secondary" href="contacto.html">Contacto</a>
+
+  <div class="hero-chips" aria-label="Accesos rápidos">
+    <a class="chip" href="instituciones.html">Instituciones Educativas</a>
+    <a class="chip" href="programa.html">Programa en Acción</a>
+  </div>
 </div>
 
+<p class="hero-highlights">
+  Programa educativo sobre Seguridad Vial destinado a Escuelas Primarias y Secundarias.
+</p>
+
           <ul class="hero-highlights" aria-label="Puntos clave">
-        Programa educativo sobre Seguridad Vial destinado a Escuelas Primarias y Secundarias
           </ul>
         </div>
 
         <div class="hero-media" aria-label="Imagen ilustrativa">
-          <div class="media-placeholder" role="img" aria-label="Imagen: familia y educación vial"></div>
-        </div>
-      </div>
+  <img 
+    src="img/hero-seguridad-vial.png" 
+    alt="Familia participando en actividad de educación vial"
+    class="hero-image"
+  />
+</div>
+
     </section>
 
     <section class="pillars" aria-label="Pilares del programa">
       <div class="wrap">
-        <h2 class="section-title">Un enfoque simple y efectivo</h2>
-        <p class="section-subtitle">
-          Trabajamos para construir hábitos seguros desde edades tempranas, con recursos accesibles para toda la comunidad.
-        </p>
 
     <section class="cta" aria-label="Llamado a la acción">
       <div class="wrap cta-inner">
@@ -69,7 +77,6 @@
 
         <div class="cta-actions">
           <a class="btn btn-invert" href="contacto.html">Contactanos</a>
-          <a class="btn btn-ghost" href="material.html">Ver materiales</a>
         </div>
       </div>
     </section>
@@ -78,9 +85,11 @@
   <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-inner">
       <div class="footer-brand">
-        <img class="footer-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
-        <p class="footer-desc">Seguridad Vial</p>
-      </div>
+  <!--
+  <img class="footer-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
+  -->
+  <p class="footer-desc">Seguridad Vial</p>
+</div>
 
       <div class="footer-links" aria-label="Enlaces del sitio">
         <a href="instituciones.html">Instituciones educativas</a>
@@ -91,7 +100,7 @@
 
       <div class="footer-meta">
         <p class="footer-copy">
-          © <span id="year"></span>Todos los derechos reservados.
+          © <span id="year"></span> Todos los derechos reservados.
         </p>
       </div>
     </div>

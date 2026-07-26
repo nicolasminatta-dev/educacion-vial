@@ -116,3 +116,85 @@ async function cargarEscuelasVisitadas() {
 
 // Ejecutar al cargar
 cargarEscuelasVisitadas();
+const galeriaImgs = document.querySelectorAll('.galeria-img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+const lightboxPrev = document.querySelector('.lightbox-prev');
+const lightboxNext = document.querySelector('.lightbox-next');
+
+if (galeriaImgs.length && lightbox && lightboxImg && lightboxClose && lightboxPrev && lightboxNext) {
+  const imagenes = Array.from(galeriaImgs).slice(0, galeriaImgs.length / 2);
+  let currentIndex = 0;
+
+  function abrirLightbox(index) {
+    currentIndex = index;
+    lightboxImg.src = imagenes[currentIndex].src;
+    lightboxImg.alt = imagenes[currentIndex].alt;
+    lightbox.classList.add('open');
+  }
+
+  function cerrarLightbox() {
+    lightbox.classList.remove('open');
+    lightboxImg.src = '';
+  }
+
+  function mostrarAnterior() {
+    currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
+    lightboxImg.src = imagenes[currentIndex].src;
+    lightboxImg.alt = imagenes[currentIndex].alt;
+  }
+
+  function mostrarSiguiente() {
+    currentIndex = (currentIndex + 1) % imagenes.length;
+    lightboxImg.src = imagenes[currentIndex].src;
+    lightboxImg.alt = imagenes[currentIndex].alt;
+  }
+
+  imagenes.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      abrirLightbox(index);
+    });
+  });
+
+  lightboxClose.addEventListener('click', cerrarLightbox);
+
+  lightboxPrev.addEventListener('click', mostrarAnterior);
+  lightboxNext.addEventListener('click', mostrarSiguiente);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      cerrarLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+
+    if (e.key === 'Escape') cerrarLightbox();
+    if (e.key === 'ArrowLeft') mostrarAnterior();
+    if (e.key === 'ArrowRight') mostrarSiguiente();
+  });
+}
+
+if (galeriaImgs.length && lightbox && lightboxImg && lightboxClose) {
+  galeriaImgs.forEach((img) => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+    });
+  });
+
+  lightboxClose.addEventListener('click', () => {
+    lightbox.classList.remove('open');
+    lightboxImg.src = '';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('open');
+      lightboxImg.src = '';
+    }
+  });
+}

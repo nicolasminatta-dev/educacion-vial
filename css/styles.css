@@ -270,7 +270,7 @@ a:hover{ text-decoration: underline; }
 
 /* CTA */
 .cta{
-  padding: 34px 0;
+  padding: 18px 0;
   background: var(--brand);
   color: #fff;
 }
@@ -282,7 +282,13 @@ a:hover{ text-decoration: underline; }
   flex-wrap: wrap;
 }
 .cta-title{ margin: 0 0 8px; font-size: 1.6rem; }
-.cta-text{ margin: 0; opacity: .92; max-width: 62ch; }
+
+.cta-text{
+  margin: 0;
+  color: #ffffff;
+  opacity: 1;
+  max-width: 62ch;
+}
 
 .btn-invert{
   background: #fff;
@@ -373,6 +379,7 @@ a:hover{ text-decoration: underline; }
 
 .mt-20{
   margin-top: 20px;
+text-align:left;
 }
 /* =========================
    Formulario contacto
@@ -401,7 +408,7 @@ a:hover{ text-decoration: underline; }
    ========================= */
 
 .visits{
-  margin-top: 8px;
+  margin-top: -135px;
 }
 
 .visits-tools{
@@ -467,4 +474,899 @@ a:hover{ text-decoration: underline; }
   font-weight: 700;
   color: var(--brand);
   font-size: 0.9rem;
+}
+.hero-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image{
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+/* === AJUSTE ESTÉTICO HERO (más cálido / menos técnico) === */
+.hero {
+  padding: 48px 0 24px;
+}
+
+.hero .eyebrow,
+.hero .badge,
+.hero .pill {
+  border-radius: 999px;
+}
+
+.hero h1 {
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  line-height: 1.6;
+  color: #4b5563; /* gris más amable que negro puro */
+  max-width: 60ch;
+}
+
+/* Botones del hero: menos “app”, más simple */
+.hero .btn,
+.hero a.btn,
+.hero button {
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+/* Si tenés fila de botones en hero, que respire y no quede tan rígida */
+.hero .actions,
+.hero .buttons,
+.hero .cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* Imagen del hero: más integrada y suave */
+.hero .hero-image img,
+.hero img.hero-image {
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+/* En mobile: apilar y dar aire */
+@media (max-width: 900px) {
+  .hero {
+    padding: 40px 0 28px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 7vw, 44px);
+  }
+}
+/* === AJUSTE ESTÉTICO SECCIONES (más familiar / menos técnico) === */
+
+/* Más aire entre secciones */
+section {
+  padding: 56px 0;
+}
+
+/* Título: más humano (un poco más grande y con mejor ritmo) */
+.section-title{
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 2.2vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Subtítulo: más fácil de leer */
+.section-subtitle{
+  margin: 0 0 22px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #4b5563; /* gris amable */
+  max-width: 62ch;
+}
+
+/* Separador sutil entre secciones (evita look “técnico”) */
+section + section{
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Mobile: menos padding para que no quede “vacío” */
+@media (max-width: 900px){
+  section{
+    padding: 38px 0;
+  }
+}
+/* === CAMBIO ESTÉTICO HERO (menos técnico, más familiar) === */
+.hero {
+  padding: 56px 0;
+  background: rgba(220, 38, 38, 0.04); /* tint suave */
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.kicker {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(220, 38, 38, 0.10);
+  color: #b91c1c;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.hero-title {
+  margin: 10px 0 12px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hero-highlights {
+  margin: 14px 0 0;
+  color: #4b5563;
+  line-height: 1.65;
+  max-width: 60ch;
+}
+
+/* Acciones: 2 botones + chips */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.10);
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.chip:hover {
+  border-color: rgba(0,0,0,0.18);
+}
+
+/* Imagen más amable */
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .hero { padding: 38px 0; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-media { order: -1; }
+}
+/* === ESTÉTICA GENERAL (más familiar) === */
+
+/* Texto general un poco más grande y más legible */
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Contenedores: más aire */
+.wrap {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* Secciones: ritmo más editorial */
+section {
+  padding: 56px 0;
+}
+
+@media (max-width: 900px) {
+  section { padding: 40px 0; }
+}
+
+/* Tarjetas/bloques (si usás .card o similares) */
+.card,
+.pillar,
+.tile,
+.box {
+  border-radius: 18px;
+}
+
+/* Botones: menos “corporate”, más amable */
+.btn {
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-weight: 700;
+}
+
+/* Links del menú: un poco más suaves */
+.nav-link {
+  opacity: 0.92;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* CTA: redondeo y aire */
+.cta {
+  border-radius: 22px;
+}
+
+.cta-inner {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* === CTA más cálido y menos corporativo === */
+
+.cta {
+  border-radius: 28px;
+  margin: 40px 0;
+}
+
+.cta-inner {
+  padding: 36px 32px;
+}
+
+.cta-title {
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.cta-text {
+  line-height: 1.65;
+  opacity: 0.95;
+  max-width: 60ch;
+}
+
+/* Botones dentro del CTA */
+.cta .btn {
+  border-radius: 14px;
+  padding: 12px 18px;
+}
+
+/* Mobile ajuste */
+@media (max-width: 900px) {
+  .cta-inner {
+    padding: 28px 20px;
+  }
+}
+.hero {
+  background: linear-gradient(
+    to right,
+    rgba(220, 38, 38, 0.04),
+    rgba(220, 38, 38, 0.02)
+  );
+}
+/* Ajuste de espacio inferior del hero */
+.hero {
+  padding: 48px 0 24px;
+}
+
+/* Ajuste del espacio bajo el texto final del hero */
+.hero-highlights {
+  margin-bottom: 8px;
+}
+/* === Unificar botones del hero en rojo === */
+
+.hero .btn,
+.hero .btn-secondary,
+.hero .btn-primary {
+  background-color: #dc2626; /* rojo */
+  color: #ffffff;
+  border: none;
+}
+
+.hero .btn:hover,
+.hero .btn-secondary:hover,
+.hero .btn-primary:hover {
+  background-color: #b91c1c; /* rojo más oscuro al pasar mouse */
+  color: #ffffff;
+}
+/* === Unificar también los chips del hero === */
+
+.hero .chip {
+  background-color: #dc2626;
+  color: #ffffff;
+  border: none;
+}
+
+.hero .chip:hover {
+  background-color: #b91c1c;
+  color: #ffffff;
+}
+/* Quitar subrayado en chips del hero */
+.hero .chip,
+.hero .chip:hover,
+.hero .chip:focus {
+  text-decoration: none;
+}
+.brand-logo {
+  height: 56px !important;
+  width: auto !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+/* === Ajustar ancho del bloque CTA rojo === */
+
+.cta .wrap {
+  max-width: 1000px; /* antes ocupaba todo */
+  margin: 0 auto;
+}
+/* === Menú superior en rojo === */
+
+.nav-link {
+  color: #dc2626;
+}
+
+.nav-link:hover {
+  color: #b91c1c;
+}
+/* === Ajuste tamaño botones del hero === */
+
+.hero .btn,
+.hero .chip {
+  padding: 8px 12px;   /* antes eran más grandes */
+  font-size: 0.9rem;   /* ligeramente más pequeño */
+  border-radius: 12px;  /* un poco menos redondeado */
+}
+/* === MATERIAL: asegurar espacio de imagen (placeholder visible) === */
+.hero .hero-inner{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero .hero-media{
+  display: block;
+}
+
+.material-placeholder{
+  width: 100%;
+  height: 320px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.10),
+    rgba(220, 38, 38, 0.03)
+  );
+  border: 1px dashed rgba(220, 38, 38, 0.25);
+}
+
+@media (max-width: 900px){
+  .hero .hero-inner{ grid-template-columns: 1fr; }
+}
+/* Placeholder genérico para páginas internas */
+.section-placeholder{
+  width: 100%;
+  height: 320px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.10),
+    rgba(220, 38, 38, 0.03)
+  );
+  border: 1px dashed rgba(220, 38, 38, 0.25);
+}
+.hero-image{
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+/* === Pulido final: consistencia en heroes internos === */
+
+.hero {
+  padding: 48px 0 16px; /* compacto y parejo en todas */
+}
+
+.hero-inner {
+  gap: 26px;
+}
+
+.hero-title {
+  margin: 10px 0 10px;
+}
+
+.hero-highlights {
+  margin-top: 10px;
+  max-width: 62ch;
+}
+
+/* Asegura que las imágenes se vean iguales en todas las páginas */
+.hero-media {
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 900px){
+  .grid-3{ grid-template-columns: 1fr; }
+}
+.material-preview{
+  width:40%;
+  display:block;
+  margin:0 auto 12px auto;
+  border-radius:10px;
+}
+.instituciones-full .wrap{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.back-home{
+  margin-top: 30px;
+  display:flex;
+  justify-content:flex-start;
+}
+.back-home .btn{
+  background-color:#e30613;
+  color:white;
+  border:none;
+}
+
+.back-home .btn:hover{
+  background-color:#b8050f;
+}
+/* ===== Galería Programa en Acción ===== */
+
+.programa-galeria {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.galeria-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: galeria-scroll 35s linear infinite;
+}
+
+.galeria-img {
+  width: 280px;
+  height: 180px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria-img:hover {
+  transform: translateY(-4px);
+}
+
+/* Animación de desplazamiento */
+
+@keyframes galeria-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ===== Lightbox / visor ampliado ===== */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  background: #fff;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 42px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev {
+  left: 24px;
+}
+
+.lightbox-next {
+  right: 24px;
+}
+/* === PULIDO 01: header más fino y más limpio === */
+
+.site-header{
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.header-inner{
+  padding: 10px 0;
+}
+
+.brand-logo{
+  height: 48px !important;
+}
+
+.nav{
+  gap: 10px;
+}
+
+.nav-link{
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition: background .18s ease, color .18s ease, opacity .18s ease;
+}
+
+.nav-link:hover{
+  background: #fff3f5;
+  color: #b91c1c;
+  text-decoration: none;
+}
+
+.nav-link.active{
+  background: #ffe8ee;
+  color: #b91c1c;
+  font-weight: 700;
+}
+/* === PULIDO 02: tipografía más agradable y elegante === */
+
+body{
+  font-size: 16px;
+  line-height: 1.65;
+  color: #1f2937;
+}
+
+.hero-title{
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 750;
+  max-width: 26ch;
+}
+
+.section-title{
+  font-size: clamp(1.8rem, 2.4vw, 2.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  font-weight: 750;
+}
+
+.hero-subtitle,
+.section-subtitle,
+.hero-highlights,
+.cta-text,
+.card-text,
+.step-text,
+.footer-desc,
+.footer-copy{
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.kicker{
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* === PULIDO 03: fondos y separadores más suaves === */
+
+:root{
+  --soft: #faf8f8;
+  --line: rgba(17, 17, 17, 0.06);
+}
+
+section + section{
+  border-top: 1px solid rgba(17, 17, 17, 0.04);
+}
+
+.pillars{
+  background: #faf8f8;
+  border-top: 1px solid rgba(17, 17, 17, 0.05);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.05);
+}
+
+.site-footer{
+  border-top: 1px solid rgba(17, 17, 17, 0.05);
+  background: #fcfbfb;
+}
+/* === Corrección color texto CTA rojo === */
+
+.cta .cta-copy,
+.cta .cta-copy .cta-title,
+.cta .cta-copy .cta-text,
+.cta .cta-copy p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+/* === PULIDO 04: tarjetas, bloques y formulario más finos === */
+
+.card,
+.step,
+.visits-table-wrap,
+.form-contacto,
+.section-placeholder,
+.material-placeholder {
+  border-radius: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.card,
+.step {
+  padding: 22px;
+}
+
+.form-contacto {
+  padding: 24px;
+  background: #ffffff;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  border: 1px solid rgba(17, 17, 17, 0.10);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: rgba(228, 0, 43, 0.45);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.08);
+}
+/* === PULIDO 05: botones y chips más elegantes === */
+
+.btn,
+.hero .btn,
+.cta .btn,
+.chip,
+.hero .chip {
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease, color .16s ease;
+}
+
+.btn:hover,
+.chip:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.btn-primary,
+.hero .btn-primary,
+.hero .btn-secondary,
+.hero .btn {
+  box-shadow: 0 8px 18px rgba(220, 38, 38, 0.18);
+}
+
+.btn-primary:hover,
+.hero .btn-primary:hover,
+.hero .btn-secondary:hover,
+.hero .btn:hover {
+  box-shadow: 0 10px 22px rgba(220, 38, 38, 0.24);
+}
+
+.btn-invert {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.btn-invert:hover {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.chip,
+.hero .chip {
+  box-shadow: 0 6px 14px rgba(220, 38, 38, 0.14);
+}
+/* === PULIDO 06: footer más elegante === */
+
+.site-footer{
+  background: #fafafa;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding: 32px 0;
+}
+
+.footer-inner{
+  gap: 24px;
+}
+
+.footer-desc{
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.footer-links a{
+  font-size: 0.95rem;
+  color: #6b7280;
+  transition: color .15s ease;
+}
+
+.footer-links a:hover{
+  color: #dc2626;
+  text-decoration: none;
+}
+
+.footer-copy{
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+/* === PULIDO 07: hero más equilibrado === */
+
+.hero-inner{
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-copy{
+  max-width: 520px;
+}
+
+.hero-title{
+  margin-bottom: 14px;
+}
+
+.hero-highlights{
+  margin-top: 12px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-actions{
+  margin-top: 16px;
+}
+
+.hero-image{
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+/* === PULIDO 08: mejor ritmo y espaciado interno === */
+
+.hero-copy > * + *{
+  margin-top: 14px;
+}
+
+.card > * + *,
+.step > * + *{
+  margin-top: 10px;
+}
+
+.cta-copy > * + *{
+  margin-top: 10px;
+}
+
+.footer-brand > * + *,
+.footer-meta > * + *{
+  margin-top: 8px;
+}
+
+.form-contacto > * + *{
+  margin-top: 14px;
+}
+/* === PULIDO 09: tabla y búsqueda más elegantes === */
+
+.visits-tools{
+  margin: 16px 0 18px;
+}
+
+.visits-search{
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+}
+
+.visits-search:focus{
+  border-color: rgba(228, 0, 43, 0.35);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.08);
+}
+
+.visits-table-wrap{
+  border-radius: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.visits-table thead th{
+  background: #faf8f8;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.visits-table th,
+.visits-table td{
+  padding: 14px 16px;
+}
+
+.visits-table tbody tr:nth-child(even){
+  background: rgba(0,0,0,0.015);
+}
+
+.visits-table tbody tr:hover{
+  background: rgba(228, 0, 43, 0.04);
 }
