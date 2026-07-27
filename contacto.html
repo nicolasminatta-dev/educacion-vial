@@ -13,15 +13,17 @@
 
   <header class="site-header" role="banner">
     <div class="wrap header-inner">
+      <!-- Logo institucional temporalmente oculto
       <a class="brand" href="index.html" aria-label="Fundación MAPFRE - Seguridad Vial">
         <img class="brand-logo" src="img/logo-fundacion-mapfre.jpg" alt="Fundación MAPFRE" />
       </a>
+      -->
 
       <nav class="nav" aria-label="Navegación principal">
         <a class="nav-link" href="instituciones.html">Instituciones educativas</a>
         <a class="nav-link" href="programa.html">Programa en acción</a>
         <a class="nav-link" href="material.html">Material de descarga</a>
-        <a class="nav-link" href="contacto.html">Contacto</a>
+        <a class="nav-link active" href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
@@ -45,37 +47,37 @@
 
   </div>
 </section>
-    <section class="how">
-      <div class="wrap">
+    <section class="how contact-section">
+      <div class="wrap contact-wrap">
         <p class="hero-subtitle">
           Completá tus datos y nos pondremos en contacto para coordinar la implementación del programa de Seguridad Vial.
         </p>
-        <form class="card mt-16 form-contacto" action="#" method="post" onsubmit="return false;">
-          <div style="margin-bottom:12px;">
+        <form class="card mt-16 form-contacto contact-card" action="#" method="post" onsubmit="return false;">
+          <div>
             <label for="nombre"><strong>Nombre</strong></label><br />
-            <input type="text" id="nombre" name="nombre" style="width:100%; padding:10px; border:1px solid #e8e8e8; border-radius:10px;">
+            <input type="text" id="nombre" name="nombre">
           </div>
 
-          <div style="margin-bottom:12px;">
+          <div>
             <label for="email"><strong>Email</strong></label><br />
-            <input type="email" id="email" name="email" style="width:100%; padding:10px; border:1px solid #e8e8e8; border-radius:10px;">
+            <input type="email" id="email" name="email">
           </div>
 
-          <div style="margin-bottom:12px;">
+          <div>
             <label for="institucion"><strong>Institución</strong></label><br />
-            <input type="text" id="institucion" name="institucion" style="width:100%; padding:10px; border:1px solid #e8e8e8; border-radius:10px;">
+            <input type="text" id="institucion" name="institucion">
           </div>
 
-          <div style="margin-bottom:16px;">
+          <div>
             <label for="mensaje"><strong>Mensaje</strong></label><br />
-            <textarea id="mensaje" name="mensaje" rows="4" style="width:100%; padding:10px; border:1px solid #e8e8e8; border-radius:10px;"></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">Enviar consulta</button>
         </form>
 
         <div class="mt-20">
-          <a class="btn btn-secondary" href="index.html">Volver a inicio</a>
+          <a class="btn btn-primary" href="index.html">Volver al inicio</a>
         </div>
       </div>
     </section>
@@ -84,7 +86,9 @@
   <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-inner">
       <div class="footer-brand">
+        <!-- Logo institucional temporalmente oculto
         <img class="footer-logo" src="img/logo-fundacion-mapfre.png" alt="Fundación MAPFRE" />
+        -->
         <p class="footer-desc">Seguridad Vial</p>
       </div>
 
